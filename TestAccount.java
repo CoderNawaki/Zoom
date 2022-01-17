@@ -5,25 +5,23 @@ public class TestAccount {
         // Account a = new SavingAccount();
         // Account fca = new FastSavingAccount();
         // SavingAccount sa = new FastSavingAccount();
-      
-        //implicit type casting fsa to ac 暗黙的
+
+        // implicit type casting fsa to ac 暗黙的
         Account acc = new FastSavingAccount();
 
-        //casting to fastsavingaccount from account　explicit
+        // casting to fastsavingaccount from account explicit
         FastSavingAccount fsa = FastSavingAccount(acc);
 
-        //type casting from account to saving account explicit
-        SavingAccount sa =SavingAccount(acc);
+        // type casting from account to saving account explicit
+        SavingAccount sa = SavingAccount(acc);
 
-       System.out.println(fsa);
-       System.out.println(sa);
-       System.out.println("calling git again");
-       System.out.println("what the heck");
-      
+        System.out.println(fsa);
+        System.out.println(sa);
+        System.out.println("calling git again");
+        System.out.println("what the heck");
 
-       int variable =0;
-
-	int mono =23;
+        int variable = 0;
+        int mono = 23;
 
     }
 
@@ -35,6 +33,9 @@ public class TestAccount {
         return null;
     }
 
+    public void CallingGit() {
+        System.out.println("what's going on?");
+    }
 
 }
 
