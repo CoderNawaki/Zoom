@@ -20,8 +20,8 @@ public class TestAccount {
         System.out.println("calling git again");
         System.out.println("what the heck");
 
-        int variable = 0;
-        int mono = 23;
+        // int variable = 0;
+        // int mono = 23;
 
     }
 
