@@ -34,4 +34,8 @@ public class Demo {
     static void callingPerson(String name, int age) {
         System.out.println("person name is " + name + "and age is " + age);
     }
+
+    public String AddressCall(String address){
+        return address;
+    }
 }
