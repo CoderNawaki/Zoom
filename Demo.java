@@ -16,6 +16,9 @@ public class Demo{
     }
 
     public static void main(String[] args) {
+
+        System.out.println("calling the stream api to check strings");
         processStrings(Arrays.asList("Stream ","are ","cool"),false);
+        //here Arrays.asList is for java8 for 9 you can use List.of()
     }
 }
