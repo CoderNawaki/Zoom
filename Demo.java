@@ -21,4 +21,8 @@ public class Demo{
         processStrings(Arrays.asList("Stream ","are ","cool"),false);
         //here Arrays.asList is for java8 for 9 you can use List.of()
     }
+
+    static void callingPerson(String name,int age){
+        System.out.println("person name is "+name +"and age is "+age);
+    }
 }
