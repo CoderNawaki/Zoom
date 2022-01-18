@@ -27,4 +27,8 @@ public class Demo{
     public  String callingString(String name){
         return name;
     }
+
+    static void callingPerson(String name,int age){
+        System.out.println("person name is "+name +"and age is "+age);
+    }
 }
