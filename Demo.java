@@ -21,11 +21,12 @@ public class Demo{
         processStrings(Arrays.asList("Stream ","are ","cool"),false);
         //here Arrays.asList is for java8 for 9 you can use List.of()
         Demo d = new Demo();
-        d.callingString("lama");
+        d.callingString("nawaki","lama");
     }
 
-    public  String callingString(String name){
-        return name;
+    public  String callingString(String name,String lastname){
+        String fullname=name+lastname;
+        return fullname;
     }
 
     static void callingPerson(String name,int age){
