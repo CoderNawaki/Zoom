@@ -2,13 +2,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class Demo{
-    static void processStrings(List<String>strings,boolean skipHeader){
+public class Demo {
+    static void processStrings(List<String> strings, boolean skipHeader) {
 
-        Stream<String>stream = strings.stream();
-        if(!skipHeader){
+        Stream<String> stream = strings.stream();
+        if (!skipHeader) {
             stream.skip(0);
-        }else{
+        } else {
             stream.skip(1);
         }
 
@@ -18,18 +18,20 @@ public class Demo{
     public static void main(String[] args) {
 
         System.out.println("calling the stream api to check strings");
-        processStrings(Arrays.asList("Stream ","are ","cool"),false);
-        //here Arrays.asList is for java8 for 9 you can use List.of()
+
+        processStrings(Arrays.asList("Stream ", "are ", "cool"), false);
+        // here Arrays.asList is for java8 for 9 you can use List.of()
         Demo d = new Demo();
-        d.callingString("nawaki","lama");
+        d.callingString("nawaki", "lama", 28);
+
     }
 
-    public  String callingString(String name,String lastname){
-        String fullname=name+lastname;
+    public String callingString(String name, String lastname, int age) {
+        String fullname = name + lastname + "" + age;
         return fullname;
     }
 
-    static void callingPerson(String name,int age){
-        System.out.println("person name is "+name +"and age is "+age);
+    static void callingPerson(String name, int age) {
+        System.out.println("person name is " + name + "and age is " + age);
     }
 }
