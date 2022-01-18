@@ -3,9 +3,9 @@ public class CaffeMocha extends Coffee {
         System.out.println("CafeMocha");
     }
     public static void main(String[] args) {
-        Coffee co = new Coffee();
+       // Coffee co = new Coffee();
         
-        CaffeMocha cm = (CaffeMocha)co;
+        //CaffeMocha cm = (CaffeMocha)co;
        
     }
 }
