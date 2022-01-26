@@ -1,0 +1,50 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Map else examples with thymeleaf</title>
+</head>
+
+<body>
+    <!-- Examples with map -->
+    <div th:text="${map.message}"></div>
+
+    <div th:text="${map['message']}"></div>
+
+    <br><hr>
+    <!-- Examples with list -->
+    <div th:text="${list[0]}"></div>
+    <div th:text="${list[1]}"></div>
+    <div th:text="${list[2]}"></div>
+    <div th:text="${list[3]}"></div>
+
+    [[@{/foo/bar(hoge='Hoge',paramValue=${paramValue})}]]
+
+    <br>
+    <hr>
+
+    [[@{/foo/{pathValue}/bar(pathValue=123)}]]
+<!-- 
+    <span th:text="${#httpServletRequest}"></span>
+    <span th:text="${#httpSession}"></span>
+    <span th:text="${param}"></span>
+    <span th:text="${session}"></span>
+    <span th:text="${application}"></span> -->
+
+    <br><hr>
+    <!-- for loop with list and map -->
+    <ul>
+        <li th:each ="element :${list}">[[${element}]]</li>
+    </ul>
+
+    <ul>
+        <li th:each="entry:${map}">
+            key=[[${entry.key}]],value=[[${entry.value}]]
+        </li>
+    </ul>
+
+</body>
+
+
+</html>

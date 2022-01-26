@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello fragment</title>
+    </head>
+
+    <body>
+        <h1>Hello Fragment</h1>
+
+        <div id="foo" th:insert="fragment/embedded ::fuga"></div>
+
+        <div th:fragment="spider">Hello spiderman</div>
+        <span th:fragment="spider">spiderman no way home</span>
+
+        <!-- going to using replace -->
+        <div id="foo" th:insert="fragment/embedded :: hoge"></div>
+        <div id="bar" th:replace="fragment/embedded :: hoge"></div>
+
+    </body>
+</html>
