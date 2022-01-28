@@ -25,6 +25,11 @@ public class HomeController {
         return "fragment/frag";
     }
 
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
+    }
+
 
     @GetMapping("/mapExample")
     public String map(Model model) {
